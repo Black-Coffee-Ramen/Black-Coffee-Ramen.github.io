@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athiyo Chakma | Cybersecurity Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .section-divider {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            margin: 0 auto 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 3px solid #e5e7eb;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #e5e7eb;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .contact-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">Athiyo Chakma</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#education" class="text-gray-700 hover:text-blue-600 transition">Education</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+                    <a href="#community" class="text-gray-700 hover:text-blue-600 transition">Community</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
+                <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Education</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Experience</a>
+                <a href="#community" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Community</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                        Hey, I'm <span class="gradient-text">Athiyo Chakma</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl font-semibold text-gray-600 mb-6">
+                        Cybersecurity Enthusiast | Community Builder | Dreamer
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        "From failing school tests to securing a place at IIIT-Delhi, my journey has been a story of growth, grit, and giving back. I'm passionate about cybersecurity, community empowerment, and building a life filled with purpose and possibilities — for myself and for those around me."
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-md">
+                            Get In Touch
+                        </a>
+                        <a href="#about" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                            <img src="https://i.ibb.co/C5Q1hhPG/IMG-20241210-WA0062-3.jpg" alt="Athiyo Chakma" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white px-4 py-2 rounded-full shadow-md">
+                            <span class="font-medium text-blue-600">📍 Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4">Personal Details</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-user mt-1 mr-3 text-blue-500"></i>
+                                <span><strong>Full Name:</strong> Athiyo Chakma</span>
+                            </li>
+                            <!-- <li class="flex items-start">
+                                <i class="fas fa-birthday-cake mt-1 mr-3 text-blue-500"></i>
+                                <span><strong>DOB:</strong> 1 November 2003</span>
+                            </li> -->
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-500"></i>
+                                <span><strong>Location:</strong> Delhi, India</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-graduation-cap mt-1 mr-3 text-blue-500"></i>
+                                <span><strong>Education:</strong> IIIT-Delhi, B.Tech CS</span>
+                            </li>
+                        </ul>
+                        
+                        <h3 class="text-xl font-semibold mt-8 mb-4">Interests</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Cybersecurity</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Threat Intelligence</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">CTFs</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Hiking</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Biking</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Tech & Society</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4">My Journey</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            I'm a third-year Computer Science student at IIIT-Delhi with roots in a small, underrepresented community. My early academic journey was tough, but a passionate teacher helped me believe in myself. Since then, I've been committed to learning, leading, and contributing back to society.
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            I dream of building a meaningful life where work is driven by passion and impact — not pressure. Currently, I's exploring the fascinating world of cybersecurity while maintaining a disciplined lifestyle that balances academics, fitness, and personal growth.
+                        </p>
+                        
+                        <h3 class="text-xl font-semibold mt-8 mb-4">My Philosophy</h3>
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+                            <p class="italic text-gray-700">
+                                "I believe in growth through curiosity, helping others rise as I climb, and living with integrity — mentally, physically, and spiritually strong."
+                            </p>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold mb-4">Lifestyle</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-running text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Running</h4>
+                                    <p class="text-sm text-gray-600">2–4 miles daily, 10+ km on Sundays</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-dumbbell text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Gym</h4>
+                                    <p class="text-sm text-gray-600">Strength & endurance focus</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-brain text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Meditation</h4>
+                                    <p class="text-sm text-gray-600">10-day Vipassana course completed</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-book text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Reading</h4>
+                                    <p class="text-sm text-gray-600">Geopolitics & tech trends</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="relative pl-8 timeline">
+                <div class="mb-12 relative timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition duration-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">IIIT-Delhi</h3>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">2022–2026</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">B.Tech in Computer Science</p>
+                        
+                        <h4 class="font-medium mb-2">Technical Electives:</h4>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Database Management Systems</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Operating Systems</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Object-Oriented Programming</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Prototyping Interactive Systems</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Network Science</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Parallel Runtimes</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Business of AI</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Valuation & Portfolio Mgmt</span>
+                        </div>
+                        
+                        <h4 class="font-medium mb-2">Key Projects:</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>Graph Search Algorithms for campus navigation</li>
+                            <li>AI Ad-Generation Tool (BAI Project)</li>
+                            <li>8 Queens Problem (AI Course Project)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm card-hover transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-handshake text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Sponsorship Operations Member</h3>
+                            <p class="text-gray-600">ESYA Techfest</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Secured partnerships with firms like PNB, Royal Enfield, IGL, Mountain Dew, NODWIN Gaming</li>
+                        <li>Developed sponsorship proposals and maintained relationships with corporate partners</li>
+                        <li>Coordinated between multiple teams to fulfill sponsorship deliverables</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm card-hover transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-users text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Executive Member</h3>
+                            <p class="text-gray-6s00">Delhi Chakma Students' Union</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Led campaigns, workshops, and student support initiatives</li>
+                        <li>Organized cultural events to promote community identity</li>
+                        <li>Facilitated networking opportunities for students from underrepresented communities</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm card-hover transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-rocket text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Startup Project: AI Ad-Gen</h3>
+                            <p class="text-gray-600">Founder & Developer</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Developing a tool that makes ad creation easy and impactful for small businesses and startups</li>
+                        <li>Implementing AI techniques to generate targeted advertising content</li>
+                        <li>Focusing on user-friendly interface design for non-technical users</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm card-hover transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-medal text-yellow-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Vipassana Meditation</h3>
+                            <p class="text-gray-600">10-day Course Completion</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Completed intensive 10-day silent meditation retreat</li>
+                        <li>Presented poster on Vipassana under IIIT-D's Self-Growth Program</li>
+                        <li>Incorporates mindfulness practices into daily routine</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Community Work</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-language text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Chakma Language Workshop</h3>
+                    <p class="text-gray-600">Organized cultural preservation initiative</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-running text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Annual Sports Meet</h3>
+                    <p class="text-gray-600">Proposed collaborative event with TSF, DSU</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover transition duration-300">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">DU Admission Guidance</h3>
+                    <p class="text-gray-600">Support program for Chakma students</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center card-hover transition duration-300">
+                    <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book-open text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Memoir Magazine</h3>
+                    <p class="text-gray-600">Creating "2019–2024" DCSU activities compilation</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white p-8 rounded-xl shadow-sm">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Community Philosophy</h3>
+                <div class="max-w-3xl mx-auto">
+                    <blockquote class="text-center text-lg italic text-gray-700 mb-8">
+                        "Empowering others creates ripples of positive change. My community work stems from the belief that when we lift each other up, we all rise together."
+                    </blockquote>
+                    <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-hands-helping text-blue-600"></i>
+                            </div>
+                            <span>Mentorship & Guidance</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-heart text-green-600"></i>
+                            </div>
+                            <span>Cultural Preservation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-lightbulb text-purple-600"></i>
+                            </div>
+                            <span>Educational Initiatives</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Have a project in mind or want to collaborate? Feel free to reach out!
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 contact-input transition" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 contact-input transition" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 contact-input transition" placeholder="How can I help?">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 contact-input transition" placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition shadow-md">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <a href="mailto:athiyo22118@iiitd.ac.in" class="text-blue-600 hover:underline">athiyo22118@iiitd.ac.in</a><br>
+                                    <a href="mailto:athiyochakma@gmail.com" class="text-blue-600 hover:underline">athiyochakma@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fab fa-linkedin-in text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/athiyo-chakma/" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/athiyo-chakma</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fab fa-github text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">GitHub</h4>
+                                    <a href="https://github.com/Black-Coffee-Ramen" target="_blank" class="text-blue-600 hover:underline">github.com/Black-Coffee-Ramen</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p>Delhi, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/athiyo-chakma/" target="_blank" class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200 transition">
+                                    <i class="fab fa-linkedin-in text-lg"></i>
+                                </a>
+                                <a href="https://github.com/Black-Coffee-Ramen" target="_blank" class="bg-gray-800 w-12 h-12 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="https://twitter.com/atiodhammei" target="_blank" class="bg-blue-400 w-12 h-12 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition">
+                                    <i class="fab fa-twitter text-lg"></i>
+                                </a>
+                                <a href="https://instagram.com/atiodhammei" target="_blank" class="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition">
+                                    <i class="fab fa-instagram text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <blockquote class="text-xl italic mb-8 max-w-3xl mx-auto">
+                    "I'm building a life with purpose, passion, and people at the center. Let's collaborate and create something that matters."
+                </blockquote>
+                
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://www.linkedin.com/in/athiyo-chakma/" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                    <a href="https://github.com/Black-Coffee-Ramen" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="https://twitter.com/atiodhammei" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                    <a href="https://instagram.com/atiodhammei" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8 mb-8">
+                    <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                    <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                    <a href="#community" class="hover:text-blue-400 transition">Community</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                
+                <p class="text-gray-400">
+                    &copy; 2023 Athiyo Chakma. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
